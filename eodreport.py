@@ -1,5 +1,5 @@
 import datetime, os
-currentUser = os.environ['USERPROFILE']
+currentUser = os.path.expanduser("~")
 print(currentUser)
 reportStorage = currentUser + "/Desktop/End of Day Reports"
 if not os.path.exists(reportStorage):
